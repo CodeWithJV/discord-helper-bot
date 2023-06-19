@@ -70,8 +70,7 @@ def save_url(video_url):
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
-    print('Bot is ready to receive messages')
-
+    
     while True:
         await check_new_video()
         # Wait for 15 minutes before checking again
