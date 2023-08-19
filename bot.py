@@ -69,7 +69,7 @@ def save_url(video_url):
     with open(file_path, 'w') as file:
         file.write(video_url)
 
-def read_and_delete_first_post():
+async def read_and_delete_first_post():
     with open('links.txt', 'r') as file:
         lines = file.readlines()
     post = ""
@@ -77,7 +77,8 @@ def read_and_delete_first_post():
         if line.strip() == '---':
             break
         post += line
-    print(post)
+    channel = bot.get_channel(1107939793532362782)
+    await channel.send(post)
     with open('links.txt', 'w') as file:
         file.writelines(lines[i+1:])
 
