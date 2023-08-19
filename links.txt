@@ -1,4 +1,3 @@
----
 https://www.maginative.com/article/us-airforce-sucessfully-uses-ai-to-pilot-xq-58a-valkyrie
 
 The US Air Force Research Laboratory (AFRL) has successfully carried out a historic flight with an XQ-58A Valkyrie aircraft piloted entirely by AI, marking a crucial step in military aviation. This development poses potential applications for Combined Joint All-Domain Command and Control initiatives and signals a shift towards autonomous warfare, raising important questions regarding ethics, strategy, and the rules of engagement.
