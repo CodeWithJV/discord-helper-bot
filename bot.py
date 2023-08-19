@@ -73,8 +73,10 @@ async def read_and_delete_first_post():
     with open('links.txt', 'r') as file:
         lines = file.readlines()
     post = ""
-    for i, line in enumerate(lines[0:]): 
+    delimiter_line = None
+    for i, line in enumerate(lines, start=1): 
         if line.strip() == '---':
+            delimiter_line = i
             break
         post += line
     channel = bot.get_channel(1107939793532362782)
@@ -82,7 +84,7 @@ async def read_and_delete_first_post():
     if post.strip():  # Ensure that the post is not empty
         await channel.send(post)
     with open('links.txt', 'w') as file:
-        file.writelines(lines[i+2:])  # Skip the '---' line at the end of the post
+        file.writelines(lines[delimiter_line+1:])  # Skip the '---' line at the end of the post
 
 @bot.event
 async def on_ready():
