@@ -79,7 +79,7 @@ def read_and_delete_first_post():
         post += line
     print(post)
     with open('links.txt', 'w') as file:
-        file.writelines(lines[i:])
+        file.writelines(lines[i+1:])
 
 @bot.event
 async def on_ready():

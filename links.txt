@@ -1,6 +1,3 @@
-https://depot.clarafinds.com/depots/anz-gen-ai-live-map/relation_maps/2f2e
-
-ANZ Gen AI Live Map is a platform that includes various categories (vertical and productivity) such as MLOps, edtech, and sales/marketing. The map reveals operational activities across various locations like Sydney, Milwaukee, and Christchurch, with additional functionalities like zooming in/out, highlighting certain areas, and obtaining information about specific nodes.
 ---
 https://www.maginative.com/article/us-airforce-sucessfully-uses-ai-to-pilot-xq-58a-valkyrie
 
