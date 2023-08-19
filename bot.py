@@ -88,7 +88,7 @@ async def on_ready():
     
     while True:
         await check_new_video()
-        read_and_delete_first_post()
+        await read_and_delete_first_post()
         # Wait for 10 seconds before checking again
         await discord.utils.sleep_until(datetime.now() + timedelta(seconds=10))
 
