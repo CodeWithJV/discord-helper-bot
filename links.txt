@@ -1,13 +1,3 @@
-https://www.maginative.com/article/us-airforce-sucessfully-uses-ai-to-pilot-xq-58a-valkyrie
-
-The US Air Force Research Laboratory (AFRL) has successfully carried out a historic flight with an XQ-58A Valkyrie aircraft piloted entirely by AI, marking a crucial step in military aviation. This development poses potential applications for Combined Joint All-Domain Command and Control initiatives and signals a shift towards autonomous warfare, raising important questions regarding ethics, strategy, and the rules of engagement.
----
-https://github.com/Alpha-VLLM/LLaMA2-Accessory
-
-Alpha-VLLM's LLaMA2-Accessory is an open-source toolkit for the development of Large Language Models (LLMs), including pre-training, fine-tuning, and deployment. It supports more datasets and tasks, efficient optimization and deployment, and a variety of visual encoders and LLMs.
-
----
-https://github.com/invictus717/MetaTransformer
 
 Meta-Transformer is a unified multimodal learning framework that employs a shared encoder to extract representation across different modalities, reducing them to token sequences. These sequences, derived from 12 different modalities including text, image, audio, video, infrared, hyper-spectral, X-Ray, tabular, graph, time-series, and Inertial Measurement Unit (IMU) data, can then be used to handle various tasks such as classification, detection and segmentation.
 
