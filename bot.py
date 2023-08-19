@@ -53,6 +53,8 @@ async def check_new_video():
             announcement_channel = bot.get_channel(int(announcement_channel_id))
             await announcement_channel.send(f'New video published: {video_url}')
             save_url(video_url)
+        else:
+            print("video matches")
 
 def is_same_url(video_url):
     file_path = '.most-recent-url'
