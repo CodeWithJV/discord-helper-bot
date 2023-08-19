@@ -72,10 +72,14 @@ def save_url(video_url):
 def read_and_delete_first_post():
     with open('links.txt', 'r') as file:
         lines = file.readlines()
-    post = lines[0]
+    post = ""
+    for i, line in enumerate(lines):
+        if line.strip() == '---':
+            break
+        post += line
     print(post)
     with open('links.txt', 'w') as file:
-        file.writelines(lines[1:])
+        file.writelines(lines[i:])
 
 @bot.event
 async def on_ready():
