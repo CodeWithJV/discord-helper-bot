@@ -69,13 +69,22 @@ def save_url(video_url):
     with open(file_path, 'w') as file:
         file.write(video_url)
 
+def read_and_delete_first_post():
+    with open('links.txt', 'r') as file:
+        lines = file.readlines()
+    post = lines[0]
+    print(post)
+    with open('links.txt', 'w') as file:
+        file.writelines(lines[1:])
+
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
     
     while True:
         await check_new_video()
-        # Wait for 15 minutes before checking again
-        await discord.utils.sleep_until(datetime.now() + timedelta(minutes=15))
+        read_and_delete_first_post()
+        # Wait for 10 seconds before checking again
+        await discord.utils.sleep_until(datetime.now() + timedelta(seconds=10))
 
 bot.run(discord_token)
